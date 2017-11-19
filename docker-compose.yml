@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  angular-widget:
+    container_name: angular-widget-frontend
+    build: docker/frontend
+    ports:
+      - 4200:4200
+    volumes:
+      - ./:/var/www/angular_widget
+    tty: true
+    networks:
+      - angular-widget-network
+
+networks:
+ angular-widget-network:
