@@ -1,7 +1,9 @@
 <h1>Hot Weather Widget</h1>
 <div class="element">
+		{{ hotels$ | async | json }}
 	<widget-menu></widget-menu>
 		<div class="element-right">
+			
 			<widget-weather></widget-weather>
 			<widget-follower></widget-follower>
 		</div>

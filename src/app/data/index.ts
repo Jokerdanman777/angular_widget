@@ -1,3 +1,6 @@
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/of';
+
 const data: Hotel[]  = [
     {
     address: '35 Boston Street',
@@ -60,3 +63,6 @@ const data: Hotel[]  = [
     id: 4
   }
 ];
+
+export const hotels$: Observable<Hotel[]> =
+  Observable.of(data);
