@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-
+import { NgStyle } from '@angular/common';
 @Component({
   selector: 'widget-menu',
   templateUrl: './menu.component.html',

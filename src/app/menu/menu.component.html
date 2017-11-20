@@ -4,7 +4,7 @@
       <div class="ele-strip">
         <ul >
           <li *ngFor=" let hotel of hotels">
-            <a href="#" (click)="outputData(hotel)">{{ hotel.type }}</a>
+            <a (click)="outputData(hotel)" [ngStyle]="{'cursor':'pointer'}">{{ hotel.type }}</a>
           </li>
         </ul>
       </div>
@@ -14,7 +14,7 @@
            <div class="activity_box">
             <div class="scrollbar" id="style-2">
                    <div class="activity-row" *ngFor="let hotel of hotels">
-                   <div class="activity-desc">
+                   <div class="activity-desc" (click)="outputData(hotel)" [ngStyle]="{'cursor':'pointer'}">
                      <h5>Resort Address</h5>
                       <p>{{ hotel.address }}</p>
                      <h6>{{ hotel.phone }}</h6>

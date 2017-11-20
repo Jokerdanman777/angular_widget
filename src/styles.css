@@ -193,6 +193,9 @@ ul li.anc-bor {
 .activity-row, .activity-row1{
   text-align: left;
 }
+.activity-row:hover {
+  background-color: #F5F5F5;
+}
 i.text-info{
   float: left;
   line-height: 60px;
