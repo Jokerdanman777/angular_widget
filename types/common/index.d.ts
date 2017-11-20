@@ -4,6 +4,7 @@ type Hotel = {
   img: string
   weather: {
      title: string,
+     img: string,
      water: number,
      temperatur: number
   },

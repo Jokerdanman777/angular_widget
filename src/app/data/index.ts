@@ -8,6 +8,7 @@ const data: Hotel[]  = [
     img: '/assets/images/res.jpg',
     weather: {
        title: 'Boston',
+       img: '/assets/images/tstorms.png',
        water: 19,
        temperatur: 33
     },
@@ -25,6 +26,7 @@ const data: Hotel[]  = [
     img: '/assets/images/r1.jpg',
     weather: {
        title: 'LA',
+       img: '/assets/images/53565.png',
        water: 30,
        temperatur: 36
     },
@@ -42,6 +44,7 @@ const data: Hotel[]  = [
     img: '/assets/images/res.jpg',
     weather: {
        title: 'California',
+       img: '/assets/images/cloudy2.png',
        water: 29,
        temperatur: 35
     },
@@ -59,6 +62,7 @@ const data: Hotel[]  = [
     img: '/assets/images/r1.jpg',
     weather: {
        title: 'Delaware',
+       img: '/assets/images/tstorms.png',
        water: 25,
        temperatur: 33
     },
