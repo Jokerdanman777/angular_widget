@@ -5,8 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PhonePipesPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(value: string): string {
+    if (!value) {
+      return value;
+    }
+      return value.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
   }
 
 }

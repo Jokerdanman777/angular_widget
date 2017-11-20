@@ -17,7 +17,7 @@
                    <div class="activity-desc" (click)="outputData(hotel)" [ngStyle]="{'cursor':'pointer'}">
                      <h5>Resort Address</h5>
                       <p>{{ hotel.address }}</p>
-                     <h6>{{ hotel.phone }}</h6>
+                     <h6>{{ hotel.phone | phonePipes}}</h6>
                    </div>
                    <div class="activity-img">
                      <ul>

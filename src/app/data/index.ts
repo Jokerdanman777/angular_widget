@@ -4,7 +4,7 @@ import 'rxjs/add/observable/of';
 const data: Hotel[]  = [
     {
     address: '35 Boston Street',
-    phone:  543876,   // дополнительно задание pipe для форматирования
+    phone:  '5461815489',   // дополнительно задание pipe для форматирования
     img: '/assets/images/res.jpg',
     weather: {
        title: 'Boston',
@@ -21,7 +21,7 @@ const data: Hotel[]  = [
   },
   {
     address: 'Hollywood Boulevard‎',
-    phone:  876832,   // дополнительно задание pipe для форматирования
+    phone:  '6489376495',   // дополнительно задание pipe для форматирования
     img: '/assets/images/r1.jpg',
     weather: {
        title: 'LA',
@@ -38,7 +38,7 @@ const data: Hotel[]  = [
   },
   {
     address: '150 California Street',
-    phone:  867287,   // дополнительно задание pipe для форматирования
+    phone:  '5846859548',   // дополнительно задание pipe для форматирования
     img: '/assets/images/res.jpg',
     weather: {
        title: 'California',
@@ -55,7 +55,7 @@ const data: Hotel[]  = [
   },
   {
     address: '1312 Delaware St',
-    phone:  867592,   // дополнительно задание pipe для форматирования
+    phone:  '1235258495',   // дополнительно задание pipe для форматирования
     img: '/assets/images/r1.jpg',
     weather: {
        title: 'Delaware',

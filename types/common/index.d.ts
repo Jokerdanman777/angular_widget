@@ -1,6 +1,6 @@
 type Hotel = {
   address: string,
-  phone:  number,   // дополнительно задание pipe для форматирования
+  phone:  string,   // дополнительно задание pipe для форматирования
   img: string
   weather: {
      title: string,
