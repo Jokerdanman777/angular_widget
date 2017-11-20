@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { WeatherComponent } from './weather/weather.component';
 import { FollowerComponent } from './follower/follower.component';
 import { MenuComponent } from './menu/menu.component';
+import { PhonePipesPipe } from './common/pipes/phone-pipes.pipe';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { MenuComponent } from './menu/menu.component';
     AppComponent,
     WeatherComponent,
     FollowerComponent,
-    MenuComponent
+    MenuComponent,
+    PhonePipesPipe
   ],
   imports: [
     BrowserModule
