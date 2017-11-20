@@ -1,6 +1,5 @@
-<h1>Hot Weather Widget</h1>
-<div class="element">
-		
+<widget-header></widget-header>
+<div class="element">		
 	<widget-menu (outData)="input($event)" [hotels]='hotels$ | async'></widget-menu>
 		<div class="element-right">	
 			<widget-weather [data]='data'></widget-weather>
@@ -8,6 +7,4 @@
 		</div>
 	  <div class="clear"> </div>
 </div>
-<div class="copy-right">
-			<p>© 2015 Hot Weather Widget. All rights reserved | Design by  <a href="http://w3layouts.com/" target="_blank">  W3layouts </a></p>
-</div>
+<widget-footer></widget-footer>
