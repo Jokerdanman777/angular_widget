@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'widget-follower',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FollowerComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  public data: Hotel;
 
-  ngOnInit() {
+  public constructor() { }
+
+  public ngOnInit() {
   }
 
 }

@@ -8,8 +8,12 @@ import { Observable } from 'rxjs/Observable';
 })
 export class AppComponent implements OnInit {
   public title = 'app';
+  public data: any;
   public hotels$: Observable<Hotel[]>;
   public ngOnInit(): void {
     this.hotels$ = hotels$;
   }
+  public input(data: any): void {
+    this.data = data;
+}
 }

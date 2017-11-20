@@ -1,6 +1,7 @@
 type Hotel = {
   address: string,
-  phone:  number   // дополнительно задание pipe для форматирования
+  phone:  number,   // дополнительно задание pipe для форматирования
+  img: string
   weather: {
      title: string,
      water: number,
@@ -8,8 +9,9 @@ type Hotel = {
   },
   social_info:{ 
      title: string,
+     img: string,
      followers: number,
      following: number
   }, 
-  id: number
+  type: string
 };

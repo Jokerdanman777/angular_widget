@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'widget-menu',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  @Input()
+  public hotels: Hotel[];
 
-  constructor() { }
+  @Output()
+  public outData: EventEmitter<any> = new EventEmitter<any>();
 
-  ngOnInit() {
-  }
+  public constructor() { }
 
+  public ngOnInit(): void {
+
+    }
+public outputData(hotel: Hotel): void {
+  this.outData.emit(hotel);
+}
 }
