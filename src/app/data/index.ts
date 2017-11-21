@@ -62,7 +62,7 @@ const data: Hotel[]  = [
     img: 'assets/images/r1.jpg',
     weather: {
        title: 'Delaware',
-       img: '/assets/images/tstorms.png',
+       img: 'assets/images/tstorms.png',
        water: 25,
        temperatur: 33
     },
