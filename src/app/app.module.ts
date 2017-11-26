@@ -1,3 +1,4 @@
+import { HotelsService } from './common/services/hotels.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -24,7 +25,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    HotelsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
