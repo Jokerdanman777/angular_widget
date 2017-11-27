@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
   // @Output()
   // public outData: EventEmitter<any> = new EventEmitter<any>();
   public hotels$: Observable<Hotel[]>;
-  public hotel: Hotel;
+
   public constructor(
     private _hotelsServices: HotelsService
   ) { }
@@ -22,8 +22,9 @@ export class MenuComponent implements OnInit {
   public ngOnInit(): void {
     this.hotels$ = this._hotelsServices.getHotels();
     }
-public changeHotel(hotel: Hotel): void {
-  this._hotelsServices.hotel$.next(this.hotel);
+
+  public changeHotel(hotel: Hotel): void {
+    this._hotelsServices.hotel$.next(hotel);
   // this.outData.emit(hotel);
 }
 }
