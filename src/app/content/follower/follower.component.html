@@ -1,9 +1,11 @@
 <div class="teddy-bear" >
     <div class="teddy-text">
-      <h4>{{ socialInfo?.title }}</h4>
-      <span class="w-line"> </span>
-      <img src="{{ socialInfo?.img}}" alt=""  class="img-responsive">
+      <div *ngIf = "socialInfo; else loader">
+        <h4>{{ socialInfo?.title }}</h4>
+        <span class="w-line"> </span>
+        <img src="{{ socialInfo?.img}}" alt=""  class="img-responsive">
       </div>
+    </div>
       <div class="teddy-follow">
         <ul>
           <li class="folw-h"><h3>{{ socialInfo?.following }}</h3>
@@ -15,3 +17,7 @@
         </ul>
       </div>
   </div>
+
+  <ng-template #loader>
+      <img src="assets/images/loader.gif" [ngStyle] = "{'width': '65%'}" alt="">
+  </ng-template>

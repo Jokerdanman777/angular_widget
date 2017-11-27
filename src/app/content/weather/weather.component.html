@@ -1,7 +1,13 @@
 <div class="temperatur">
+  <div *ngIf = "weather; else loader">
     <h5>{{ weather?.title }}</h5>
     <span class="w-line"> </span>
     <img src="{{ weather?.img}}" alt="" [ngStyle]="{'width':'30%'}">
     <h2>{{ weather?.temperatur }}<sup class="degree">°</sup></h2>
     <h6>Water {{ weather?.water }}<sup class="degree">°</sup></h6>
   </div>
+</div>
+
+  <ng-template #loader>
+    <img src="assets/images/loader.gif" [ngStyle] = "{'width': '65%'}" alt="">
+  </ng-template>
