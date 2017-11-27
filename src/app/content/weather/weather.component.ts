@@ -1,3 +1,4 @@
+import { HotelsService } from './../../common/services/hotels.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,12 +8,17 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class WeatherComponent implements OnInit {
 
-  @Input()
-  public data: Hotel;
+  // @Input()
+  // public data: Hotel;
+  public weather: Weather;
 
-  public constructor() { }
+  public constructor(
+    private _hotelsServices: HotelsService
+  ) { }
 
-  public ngOnInit() {
+  public ngOnInit(): void {
+    this._hotelsServices.hotel$
+      .subscribe((hotel: Hotel) => this.weather = hotel.weather);
   }
 
 }

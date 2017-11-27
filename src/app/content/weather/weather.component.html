@@ -1,7 +1,7 @@
 <div class="temperatur">
-    <h5>{{ data.weather?.title }}</h5>
+    <h5>{{ weather?.title }}</h5>
     <span class="w-line"> </span>
-    <img src="{{ data.weather?.img}}" alt="" [ngStyle]="{'width':'30%'}">
-    <h2>{{ data.weather?.temperatur }}<sup class="degree">°</sup></h2>
-    <h6>Water {{ data.weather?.water }}<sup class="degree">°</sup></h6>
+    <img src="{{ weather?.img}}" alt="" [ngStyle]="{'width':'30%'}">
+    <h2>{{ weather?.temperatur }}<sup class="degree">°</sup></h2>
+    <h6>Water {{ weather?.water }}<sup class="degree">°</sup></h6>
   </div>

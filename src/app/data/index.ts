@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
-const data: Hotel[]  = [
+export const hotels: Hotel[]  = [
     {
     address: '35 Boston Street',
     phone:  '5461815489',   // дополнительно задание pipe для форматирования
@@ -76,5 +76,5 @@ const data: Hotel[]  = [
   }
 ];
 
-export const hotels$: Observable<Hotel[]> =
-  Observable.of(data);
+// export const hotels$: Observable<Hotel[]> =
+//   Observable.of(data);
