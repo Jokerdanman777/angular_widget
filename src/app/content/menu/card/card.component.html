@@ -1,0 +1,21 @@
+<div class="village">
+  <h3>Hotels</h3>
+   <span class="line"> </span>
+     <div class="activity_box">
+      <div class="scrollbar" id="style-2">
+             <div class="activity-row" *ngFor="let hotel of hotels$ | async">
+             <div class="activity-desc" (click)="changeHotel(hotel)" [ngStyle]="{'cursor':'pointer'}">
+               <h5>Resort Address</h5>
+                <p>{{ hotel.address }}</p>
+               <h6>{{ hotel.phone | phonePipes}}</h6>
+             </div>
+             <div class="activity-img">
+               <ul>
+               <li><img src='{{ hotel.img }}'  alt=""/></li>
+               </ul>
+               </div>
+             <div class="clear"> </div>
+              </div>
+          </div>
+      </div>
+ </div>

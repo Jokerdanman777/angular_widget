@@ -10,6 +10,7 @@ import { MenuComponent } from './content/menu/menu.component';
 import { PhonePipesPipe } from './common/pipes/phone-pipes.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { CardComponent } from './content/menu/card/card.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HeaderComponent } from './header/header.component';
     MenuComponent,
     PhonePipesPipe,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule
