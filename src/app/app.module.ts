@@ -11,6 +11,7 @@ import { PhonePipesPipe } from './common/pipes/phone-pipes.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { CardComponent } from './content/menu/card/card.component';
+import { InitDirective } from './content/menu/directives/init.directive';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { CardComponent } from './content/menu/card/card.component';
     PhonePipesPipe,
     FooterComponent,
     HeaderComponent,
-    CardComponent
+    CardComponent,
+    InitDirective
   ],
   imports: [
     BrowserModule
